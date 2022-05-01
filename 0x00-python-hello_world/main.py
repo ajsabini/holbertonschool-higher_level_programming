@@ -1,3 +1,3 @@
 #!/usr/bin/phyton3
-print("Best Shcool")
+print("Best School")
 
