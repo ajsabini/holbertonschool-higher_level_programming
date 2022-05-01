@@ -6,7 +6,7 @@
  * Return: 0 si no es circular, 1 si es
  */
 
-int check_cycle(lisint_t *list)
+int check_cycle(listint_t *list)
 {
 	listint_t *slow = list, *fast = list;
 
