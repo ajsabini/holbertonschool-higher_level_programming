@@ -7,7 +7,7 @@ else:
     if (number/abs(number))*(abs(number) % 10) > 5:
         print(f"Last digit of {number} is\
  {int(number/abs(number))*(abs(number) % 10)}\
- and is greather than 5")
+ and is greater than 5")
     elif (number/abs(number))*(abs(number) % 10) == 0:
         print(f"Last digit of {number} is\
  {int(number/abs(number))*(abs(number)% 10)} and is 0")
