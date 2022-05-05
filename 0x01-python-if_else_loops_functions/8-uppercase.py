@@ -6,6 +6,7 @@ def islower(c):
     else:
         return False
 
+
 def uppercase(str):
     for x in str:
         if islower(x):
@@ -13,4 +14,3 @@ def uppercase(str):
             x = chr(y)
         print(f"{x}", end="")
     print("")
-
