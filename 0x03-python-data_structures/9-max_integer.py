@@ -6,5 +6,5 @@ def max_integer(my_list=[]):
             if x > integer:
                 integer = x
         return integer
-    else
+    else:
         return None
