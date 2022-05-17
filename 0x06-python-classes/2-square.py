@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""class square, size validation"""
+
+
 class Square():
     def __init__(self, size=0):
         if not(type(size) == int):
