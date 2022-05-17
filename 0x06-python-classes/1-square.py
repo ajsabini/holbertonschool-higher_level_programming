@@ -3,7 +3,8 @@
 
 
 class Square():
-    """define class"""
+    """define class"""i
+
     def __init__(self, size=0):
         """initiation"""
         self.__size__ = size
