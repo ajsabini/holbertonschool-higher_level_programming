@@ -77,3 +77,7 @@ class Rectangle:
             return rect_2
         else:
             return rect_1
+
+    def square(cls, size=0):
+        """return a new inst w w=h=s"""
+        return cls(size, size)
