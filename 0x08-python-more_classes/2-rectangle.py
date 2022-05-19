@@ -37,3 +37,11 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def area(self):
+        """calculate area"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """calculate perimeter"""
+        return (self.__width + self.__height) * 2
