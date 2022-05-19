@@ -60,7 +60,8 @@ class Rectangle:
 
     def __repr__(self):
         """Representation"""
-        res = "Rectangle (" + str(self.__width) + ", " + str(self.__height) + ")"
+        res = "Rectangle (" + str(self.__width) + ", " + str(self.__height)
+        + ")"
         return res
 
     def __del__(self):

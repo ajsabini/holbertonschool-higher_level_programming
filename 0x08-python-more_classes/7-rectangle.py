@@ -6,6 +6,7 @@ class Rectangle:
     """define the rectangle class"""
     number_of_instances = 0
     print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -61,7 +62,8 @@ class Rectangle:
 
     def __repr__(self):
         """Representation"""
-        res = "Rectangle (" + str(self.__width) + ", " + str(self.__height) + ")"
+        res = "Rectangle (" + str(self.__width) + ", " + str(self.__height)
+        + ")"
         return res
 
     def __del__(self):
