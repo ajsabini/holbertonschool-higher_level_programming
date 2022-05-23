@@ -1,8 +1,8 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """module"""
 
 
-def add_integer(a,b = 98):
+def add_integer(a, b=98):
     """add int function"""
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
