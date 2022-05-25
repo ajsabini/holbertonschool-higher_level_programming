@@ -29,3 +29,10 @@ none none
 	Traceback (most recent call last):
 	...
 	TypeError: first_name must be a string
+
+string + none
+	>>> say_my_name("Arturo", None)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
