@@ -39,3 +39,9 @@ ValueError: cannot convert float NaN to integer
 
 >>> add_integer(24, -15)
 9
+
+>>> add_integer(4)
+102
+
+>>> add_integer(4.5, 5.4)
+9
