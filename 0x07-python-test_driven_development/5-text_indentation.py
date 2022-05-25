@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """Module - prints a text with custom format"""
 
 
@@ -25,4 +25,3 @@ def text_indentation(text):
                 space = 1
             else:
                 print(car, end="")
-
