@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-""""""
+"""unitest"""
 
 import unittest
 
-class TestingMaxInteger(unittest.TestCase):
+max_integer = __import__('6-max_integer').max_integer
 
+class TestingMaxInteger(unittest.TestCase):
+    """class test"""
     def test_one_none(self):
         self.assertRaises(TypeError, max_integer, [None, 4, 6])
 
