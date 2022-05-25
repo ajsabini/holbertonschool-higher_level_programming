@@ -19,7 +19,3 @@ Traceback (most recent call last):
 ...
 TypeError: b must be an integer
 
->>> add_integer(eef56a, 33)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
