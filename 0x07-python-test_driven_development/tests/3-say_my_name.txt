@@ -19,3 +19,7 @@ last name not str
 both string
 	>>> say_my_name("Pedro", "Navajas")
 	My name is Pedro Navajas
+
+both empty
+	>>> say_my_name("", "")
+	My name is  
