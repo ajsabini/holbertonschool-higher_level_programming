@@ -21,5 +21,5 @@ both string
 	My name is Pedro Navajas
 
 both empty
-	>>> say_my_name("", "")
+	>>> say_my_name("")
 	My name is  
