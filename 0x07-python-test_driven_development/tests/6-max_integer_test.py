@@ -19,22 +19,19 @@ class TestingMaxInteger(unittest.TestCase):
         self.assertRaises(TypeError, max_integer, [23, "canfla", 9])
 
     def test_max_str(self):
-        self.assertEqual(max_integer['a', 'b', 'c'], 'c')
-
-    def test_bool(self):
-        self.assertRaise(TypeError, max_integer, [True, 2, 4])
+        self.assertEqual(max_integer(['a', 'b', 'c']), 'c')
 
     def test_3_int(self):
-        self.assertEqual(max_integer[1, 4, 5], 5)
+        self.assertEqual(max_integer([1, 4, 5]), 5)
 
     def test_max_middle(self):
-        self.assertEqual(max_integer[4, 55, 9], 55)
+        self.assertEqual(max_integer([4, 55, 9]), 55)
 
     def test_float(self):
-        self.assertEqual(max_integer[22.3, 5, 7], 22)
+        self.assertEqual(max_integer([22.3, 5, 7]), 22.3)
 
     def test_neg(self):
-        self.assertEqual(max_integer[-3, -22, -2], -2)
+        self.assertEqual(max_integer([-3, -22, -2]), -2)
 
 
 if __name__ == '__main__':
