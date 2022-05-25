@@ -8,15 +8,21 @@ def text_indentation(text):
         with a custom format, or shown an error
     """
 
-    if type(text) is not a str:
+    if type(text) is not str:
         raise TypeError("text must be a string")
-    for car in text
-        if text[0] == ' ':
+    if text[0] == ' ':
+        space = 1
+    else:
+        space = 0
+    for car in text:
+        if car == ' ' and space == 1:
             continue
         else:
+            space = 0
             if car == '.' or car == '?' or car == ':':
                 print(car)
                 print()
+                space = 1
             else:
-                print(elem, end="")
+                print(car, end="")
 

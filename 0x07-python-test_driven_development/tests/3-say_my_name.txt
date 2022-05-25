@@ -1,0 +1,17 @@
+==========================
+Test for 3-say_my_name.py
+--------------------------
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+first name not str
+	>>> say_my_name(132, "Gonzalez")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+last name not str
+	>>> say_my_name("Ruben", 123)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string

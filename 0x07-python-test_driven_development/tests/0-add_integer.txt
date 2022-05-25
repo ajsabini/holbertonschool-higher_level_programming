@@ -1,18 +1,10 @@
+===========================
+Test for 0-add_integer.txt
+---------------------------
+
 >>> add_integer = __import__('0-add_integer').add_integer
 
->>> add_integer(2, 3)
-5
-
->>> add_integer(1.22, 4)
-5
-
->>> add_integer(5, 0.444)
-5
-
->>> add_integer(6.555, 7.4444)
-13
-
->>> add_integer("schiool")
+>>> add_integer("asd")
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
@@ -26,3 +18,8 @@ TypeError: a must be an integer
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+>>> add_integer(eef56a, 33)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
