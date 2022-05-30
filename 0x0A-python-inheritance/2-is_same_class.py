@@ -7,6 +7,9 @@ def is_same_class(obj, a_class):
         check if two objets are
         the same class
     """
-    ret = type(obj) is a_class
+    if type(obj) is a_class:
+        ret = True
+    else:
+        ret = False
 
     return ret
