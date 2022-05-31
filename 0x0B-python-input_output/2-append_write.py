@@ -6,7 +6,7 @@
 
 
 def append_write(filename="", text=""):
-    """"""
-    with open(filename, mode='a', encoding="utf-8") as f
+    """function to append string to atext, recieve the fn and str"""
+    with open(filename, mode="a", encoding="utf-8") as f:
         write_data = f.write(text)
         return write_data
