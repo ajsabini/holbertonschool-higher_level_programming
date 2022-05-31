@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""""""
+"""add arguments to a python list, and save it"""
 
 
 import json
