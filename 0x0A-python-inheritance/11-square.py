@@ -15,4 +15,4 @@ class Square(base):
 
     def __str__(self):
         """print"""
-        return f"[square] {self.__size}/{self.__size}"
+        return f"[Square] {self.__size}/{self.__size}"
