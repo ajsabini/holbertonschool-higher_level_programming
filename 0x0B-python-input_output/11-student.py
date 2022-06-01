@@ -12,16 +12,17 @@ class Student:
 
     def to_json(self, attrs=None):
         """function that return a dict of a Student instance"""
-        if type(attrs) is not list or attrs is None:
+        if attrs is None:
             return self.__dict__
-        for elem in attrs:
-            if type(elem) is not str:
-                return self.__dict__
         else:
             obj = {}
-            obj = self.__dict__
-            for key, value in obj.items():
-                for x in attrs:
-                    if x == key:
-                        obj.update({key: value})
+            for x in attrs:
+                if x in self.__dict__.keys():
+                    obj[x] = self.__dict__[x]
             return obj
+
+    def reload_from_json(self, json):
+        """"""
+        for i in dict(self.__dict__):
+            if i in json:
+                self.__dict__[i] = json[i]
