@@ -18,10 +18,10 @@ class Student:
             if type(elem) is not str:
                 return self.__dict__
         else:
-                obj = {}
-                obj = self.__dict__
-                for key, value in obj.items():
-                    for elem in attrs:
-                        if elem == key:
-                            obj.update({key: value})
-                return obj
+            obj = {}
+            obj = self.__dict__
+            for key, value in obj.items():
+                for elem in attrs:
+                    if elem == key:
+                        obj.update({key: value})
+            return obj
