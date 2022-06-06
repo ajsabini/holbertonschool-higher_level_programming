@@ -76,3 +76,22 @@ class Rectangle(Base):
 
     def display(self):
         """print in stdout the rect inst with #"""
+        for i in range(self.__y):
+            print("\n", end="")
+        for x in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
+
+    def __str__(self):
+        """override __str__ method"""
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+
+    def update(self, *args, **kwargs):
+        """assign arguments to atrtiues"""
+        attr = {0: "id", 1: "width", 2: "height", 3: "x", 4: "y"}
+        if args and args is not None:
+            if len(args) <= 5:
+                for n in range(len(args)):
+                    setattr(self, args[n], kwargs[n])
+        else:
+            for m in kwargs:
+                setattr(self, m, kwargs[m])
