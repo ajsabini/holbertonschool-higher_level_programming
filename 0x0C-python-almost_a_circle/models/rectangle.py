@@ -87,11 +87,15 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """assign arguments to atrtiues"""
-        attr = {0: "id", 1: "width", 2: "height", 3: "x", 4: "y"}
+        atribs = {0: "id", 1: "width", 2: "height", 3: "x", 4: "y"}
         if args and args is not None:
             if len(args) <= 5:
                 for n in range(len(args)):
-                    setattr(self, args[n], kwargs[n])
+                    setattr(self, atribs[n], args[n])
         else:
             for m in kwargs:
                 setattr(self, m, kwargs[m])
+
+    def to_dictionary(self):
+        """return dictionary representation"""
+        return {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width}
