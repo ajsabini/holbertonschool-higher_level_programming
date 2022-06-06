@@ -83,12 +83,11 @@ class Rectangle(Base):
 
     def __str__(self):
         """override __str__ method"""
-        str1 = "[Rectangle] ({self.id}) {self.__x}"
-        str2 = "/{self.__y} - {self.__width}/{self.__height}"
-        return f"{str1} + {str2}"
-
+        return f"[Rectangle] ({self.id}) {self.__x}\
+/{self.__y} - {self.__width}/{self.__height}"
+        
     def update(self, *args, **kwargs):
-        """assign arguments to atrtiues"""
+        """assign arguments to atrtibutes"""
         atribs = {0: "id", 1: "width", 2: "height", 3: "x", 4: "y"}
         if args and args is not None:
             if len(args) <= 5:
