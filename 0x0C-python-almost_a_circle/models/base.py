@@ -2,6 +2,7 @@
 """module - base"""
 import json
 
+
 class Base:
     """class - Base"""
 
@@ -14,7 +15,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """return the JSON string repr of a list dictionary"""
@@ -41,7 +42,6 @@ class Base:
         if json_string is None:
             return obj_list
         return json.loads(json_string)
-
 
     @classmethod
     def create(cls, **dictionary):

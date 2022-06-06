@@ -2,6 +2,7 @@
 """module - Square"""
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """class Square"""
 
@@ -34,8 +35,7 @@ class Square(Rectangle):
         else:
             for m in kwargs:
                 setattr(self, m, kwargs[m])
-   
+
     def to_dictionary(self):
         """returns dictionary representation of a square"""
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
-    

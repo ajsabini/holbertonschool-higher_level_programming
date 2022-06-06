@@ -55,7 +55,7 @@ class Rectangle(Base):
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
-	
+
     @property
     def y(self):
         """getter __y"""
@@ -83,7 +83,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """override __str__ method"""
-        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        str1 = "[Rectangle] ({self.id}) {self.__x}"
+        str2 = "/{self.__y} - {self.__width}/{self.__height}"
+        return f{str1} + {str2}
 
     def update(self, *args, **kwargs):
         """assign arguments to atrtiues"""
@@ -98,4 +100,5 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """return dictionary representation"""
-        return {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width}
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
