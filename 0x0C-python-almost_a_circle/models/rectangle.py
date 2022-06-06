@@ -85,7 +85,7 @@ class Rectangle(Base):
         """override __str__ method"""
         return f"[Rectangle] ({self.id}) {self.__x}\
 /{self.__y} - {self.__width}/{self.__height}"
-        
+
     def update(self, *args, **kwargs):
         """assign arguments to atrtibutes"""
         atribs = {0: "id", 1: "width", 2: "height", 3: "x", 4: "y"}
