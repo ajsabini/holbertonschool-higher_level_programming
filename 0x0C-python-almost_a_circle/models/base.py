@@ -28,7 +28,7 @@ class Base:
         """write JSON string representation of list obj to a file"""
         obj_list = []
         if list_objs is None:
-            with open(ls.__name__ + ".json", "w") as f:
+            with open(cls.__name__ + ".json", "w") as f:
                 f.write(cls.to_json_string(obj_list))
         else:
             for obj in list_objs:
