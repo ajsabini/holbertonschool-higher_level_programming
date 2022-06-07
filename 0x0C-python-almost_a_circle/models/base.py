@@ -40,7 +40,7 @@ class Base:
         """return json strin to dictionary obj"""
         obj_list = []
         if json_string is None or len(json_string) == 0:
-            return obj_list
+            return []
         return json.loads(json_string)
 
     @classmethod
