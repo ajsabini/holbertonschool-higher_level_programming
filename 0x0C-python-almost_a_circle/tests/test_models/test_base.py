@@ -19,3 +19,6 @@ class BaseTest(unittest.TestCase):
             check.total_errors, 0,
             "Found code style errors"
         )
+
+if __name__ == '__main__'
+    unittest.main()
