@@ -39,7 +39,7 @@ class Base:
     def from_json_string(json_string):
         """return json strin to dictionary obj"""
         obj_list = []
-        if json_string is None:
+        if json_string is None or len(json_string) == 0:
             return obj_list
         return json.loads(json_string)
 
