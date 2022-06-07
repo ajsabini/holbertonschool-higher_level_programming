@@ -28,7 +28,8 @@ class Base:
         """write JSON string representation of list obj to a file"""
         obj_list = []
         if list_objs is None:
-            return my_list
+            with open(ls.__name__ + ".json", "w") as f:
+                f.write(cls.to_json_string(my_list))
         else:
             for obj in list_objs:
                 obj_list.append(cls.to_dictionary(obj))
@@ -39,8 +40,8 @@ class Base:
     def from_json_string(json_string):
         """return json strin to dictionary obj"""
         obj_list = []
-        if json_string is None or len(json_string) == 0:
-            return []
+        if json_string is None:
+            return obj_list
         return json.loads(json_string)
 
     @classmethod
