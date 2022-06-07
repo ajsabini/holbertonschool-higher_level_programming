@@ -47,8 +47,12 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """return an instance w/atribs already set"""
-        new_obj = cls(2, 4)
-        new_obj.update(**dictionary)
+        if cls.__name__ == "Rectangle"
+            new_obj = cls(2, 4)
+        if cls.__name__ == "Square"
+            new_obj = cls(2)
+        if new:
+            new_obj.update(**dictionary)
         return new_obj
 
     @classmethod
