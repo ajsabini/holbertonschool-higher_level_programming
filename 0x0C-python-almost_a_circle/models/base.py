@@ -47,11 +47,11 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """return an instance w/atribs already set"""
-        if cls.__name__ == "Rectangle"
+        if cls.__name__ == "Rectangle":
             new_obj = cls(2, 4)
-        if cls.__name__ == "Square"
+        if cls.__name__ == "Square":
             new_obj = cls(2)
-        if new:
+        if new_obj:
             new_obj.update(**dictionary)
         return new_obj
 
