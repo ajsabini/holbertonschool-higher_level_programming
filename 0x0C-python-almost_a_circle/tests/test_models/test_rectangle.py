@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Rectangle class - doing unittests"""
+"""doing unittest for Rectangle class"""
 
-import io
 import unittest
+import pycodestyle
+import io
 from models.rectangle import Rectangle
 
 
@@ -13,7 +14,7 @@ class TestRectangle(unittest.TestCase):
         """check PEP8 style"""
         syntaxis = pycodestyle.StyleGuide(quit=True)
         check = syntaxis.check_files(['models/rectangle.py'])
-        self.AssertEqual(
+        self.assertEqual(
             check.total_errors, 0,
             "Found code style errors"
         )

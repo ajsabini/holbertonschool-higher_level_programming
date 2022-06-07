@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """module - base"""
 import json
+from os import path
 
 
 class Base:
@@ -58,13 +59,9 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """return a list of instances"""
-        my_dict = {}
-        my_list = []
-        try:
-            with open(cls.__name__ + ".json", "r") as f:
-                my_dict = json.load(f)
-        except Exception:
-            return my_list
-        for dictio in my_dict:
-            my_list.append(cls.create(**dictio))
-        return my_list
+        fn = cls.__name__ + '.json'
+        if path.isfile(fn):
+            with open(fn, 'r', encoding='utf-8') as f:
+                dict = cls.from_json_string(f.read())
+            return [cls.create(**obj) for obj in dict]
+        return []
