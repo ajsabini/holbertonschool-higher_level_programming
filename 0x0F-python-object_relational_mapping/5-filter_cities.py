@@ -15,11 +15,11 @@ if __name__ == '__main__':
 
     cursor = db.cursor()
     if (db):
-        cursor.execute("SELECT cities.namee FROM cities LEFT JOIN states\
+        cursor.execute("SELECT cities.name FROM cities LEFT JOIN states\
                         ON states.id = cities.state_id WHERE states.name =%s\
                         ORDER BY cities.id ASC", (sys.argv[4],))
         rows = cursor.fetchall()
-        print(", ".join([row[0] for in rows]))
+        print(", ".join([row[0] for row in rows]))
         cursor.close()
         db.close()
     else:
