@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ takes in a letter and sends a POST request
-to an url w the letter as a parameter
+to an url w the letter as a parameter -
 """
 
 

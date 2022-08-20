@@ -1,5 +1,6 @@
-#!/usr/bin/python3
-""" df """
+#/usr/bin/python3
+""" takes in a url, sends a request 
+to the url an display x-request-id  """
 from sys import argv
 import urllib.request
 

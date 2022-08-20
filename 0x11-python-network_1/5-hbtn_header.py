@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" takes in a url, sends request to the url
+""" takes in a url, sends request to the url -
 and displays value of X-Request-ID in response header
 """
 

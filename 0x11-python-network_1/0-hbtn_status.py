@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" fetch a given URL """
+""" fetch a given URL - """
 
 
 import urllib.request

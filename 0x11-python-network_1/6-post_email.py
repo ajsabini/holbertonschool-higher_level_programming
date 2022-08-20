@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ takes in a url and an email, sends a POST req
 to the passed url w email as a parameter, and
-finally display body response
+finally display body response -
 """
 
 

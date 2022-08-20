@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""  """
+""" takes in a url and email sends a post
+	request to the passed url w email as
+	parameter and display body response
+"""
 
 
 from sys import argv
