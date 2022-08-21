@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ takes in a url, sends req to urland
-displays body response - 
-"""
+displays body response - """
 
 
 import requests
