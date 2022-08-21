@@ -1,4 +1,4 @@
-i!/usr/bin/python3
+#!/usr/bin/python3
 """ takes in a url, sends a req to the url and
 displays body response, decode utf-8 - """
 
