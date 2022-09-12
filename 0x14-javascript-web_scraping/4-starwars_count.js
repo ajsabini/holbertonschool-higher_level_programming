@@ -12,7 +12,7 @@ const obtenerPelicula = async () => {
     // console.log(respuesta.data.results[indice].characters.length);
     for (let indChars = 0; indChars < respuesta.data.results[indice].characters.length; indChars++) {
       // console.log(respuesta.data.results[indice].characters[indChars]);
-      if (respuesta.data.results[indice].characters[indChars] === 'https://swapi-api.hbtn.io/api/people/18/') {
+      if (respuesta.data.results[indice].characters[indChars].includes('18')) {
         cuantos++;
       }
     }
