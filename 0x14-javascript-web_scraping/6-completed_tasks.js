@@ -24,15 +24,15 @@ const obtenerPelicula = async () => {
       if (respuesta.data[indice].completed) {
         cuantos++;
       }
-
+      /*
       if (indice === respuesta.data.length - 1) {
         if (respuesta.data[respuesta.data.length - 2].userId === respuesta.data[respuesta.data.length - 1].userId) {
         // console.log(cambioUserId + ' ' + cuantos);
           diccRetorno[cambioUserId] = cuantos;
         }
-      }
+      } */
     }
-
+    diccRetorno[cambioUserId] = cuantos;
     console.log(diccRetorno);
   } catch (error) {
     console.log(error);
