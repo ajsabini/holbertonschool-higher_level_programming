@@ -2,33 +2,25 @@
 
 const urlApi = process.argv[2];
 const axios = require('axios');
-let cuantos = 0;
-//let cambioUserId = 0;
 
 const obtenerPelicula = async () => {
   try {
     const respuesta = await axios.get(urlApi);
     const diccRetorno = {};
-	let val = 0;let valD = 0;
-	for (let indice = 0; indice < respuesta.data.length; indice++) {
-		if (respuesta.data[indice].userId in diccRetorno) {
-			
-			if (respuesta.data[indice].completed) {
-		
-				val = diccRetorno[respuesta.data[indice].userId].valueOf();
+    let val = 0;
+    for (let indice = 0; indice < respuesta.data.length; indice++) {
+      if (respuesta.data[indice].userId in diccRetorno) {
+        if (respuesta.data[indice].completed) {
+          val = diccRetorno[respuesta.data[indice].userId].valueOf();
 
-		
-				val++;
-				diccRetorno[respuesta.data[indice].userId] = val;
-		
-			}
-		} else {
-		
-			diccRetorno[respuesta.data[indice].userId] = 1;
-		}
-				
-	}
-	  console.log(diccRetorno);
+          val++;
+          diccRetorno[respuesta.data[indice].userId] = val;
+        }
+      } else {
+        diccRetorno[respuesta.data[indice].userId] = 1;
+      }
+    }
+    console.log(diccRetorno);
   } catch (error) {
     console.log(error);
   }
